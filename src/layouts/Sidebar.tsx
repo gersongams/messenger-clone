@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import SidebarHeader from "../components/SidebarHeader";
+import ConversationContainer from "../containers/ConversationContainer";
 
 const StyledSidebar = styled.aside`
   flex: 0 0 25%;
@@ -12,6 +13,7 @@ const Sidebar = () => {
   return (
     <StyledSidebar>
       <SidebarHeader />
+      <ConversationContainer />
     </StyledSidebar>
   );
 };
