@@ -1,8 +1,10 @@
 import React from "react";
 import styled from "styled-components";
+import NewMessage from "../containers/NewMessage";
+import MessageInbox from "../containers/MessageInbox";
 
 const StyledMessages = styled.header`
-  flex: 2 0 0%;
+  flex: 2 0 0;
   overflow: hidden;
   position: relative;
   display: flex;
@@ -10,7 +12,12 @@ const StyledMessages = styled.header`
 `;
 
 const Messages = () => {
-  return <StyledMessages>Messages</StyledMessages>;
+  return (
+    <StyledMessages>
+      <MessageInbox />
+      <NewMessage />
+    </StyledMessages>
+  );
 };
 
 export default Messages;

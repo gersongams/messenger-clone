@@ -5,7 +5,10 @@ import Conversations from "../components/Conversations";
 
 const StyledConversationContainer = styled.div`
   height: calc(100vh - 60px);
-  overflow-y: auto;
+  overflow-y: hidden;
+  &:hover {
+    overflow-y: auto;
+  }
 `;
 
 const ConversationContainer = () => {
